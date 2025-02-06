@@ -38,8 +38,8 @@ public class Philosopher implements Runnable {
             rightFork.take();
             leftFork.take();
         } else {
-            rightFork.take();
             leftFork.take();
+            rightFork.take();
         }
 
         System.out.printf("Philosopher %s eating...%n ", id);
